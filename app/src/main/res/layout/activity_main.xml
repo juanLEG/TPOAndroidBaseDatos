@@ -1,0 +1,120 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/fondo"
+            android:id="@+id/imageView"
+            android:layout_above="@+id/botonJugar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+    </TableRow>
+
+    <TableLayout
+        android:id="@+id/ButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:stretchColumns="0,1" >
+
+        <TableRow
+            android:id="@+id/buttonRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+
+            <Button
+                android:text="@string/jugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/botonJugar"
+                android:elevation="0dp"
+                android:textSize="30dp"
+                android:layout_above="@+id/botonRanking"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_orange_dark"
+                android:layout_marginBottom="5dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/buttonRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:text="@string/ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/botonRanking"
+                android:textSize="30dp"
+                android:layout_above="@+id/botonMusica"
+                android:background="@android:color/holo_orange_dark"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="5dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/buttonRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:text="@string/musica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/botonMusica"
+                android:textSize="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/botonRanking"
+                android:layout_alignStart="@+id/botonRanking"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="5dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/buttonRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:text="@string/salir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/botonSalir"
+                android:textSize="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/botonMusica"
+                android:layout_alignEnd="@+id/botonMusica"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"/>
+
+        </TableRow>
+    </TableLayout>
+</TableLayout>
